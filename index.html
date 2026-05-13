@@ -1,0 +1,260 @@
+Replace your old code with this upgraded version 😭❤️✨
+It has:
+
+* floating hearts 💞
+* autoplay “Main Tera” 🎶
+* smoother aesthetic
+* glowing crimson red theme ❤️
+* animated buttons ✨
+
+```html id="k82ms1"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Moonpie ❤️</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:linear-gradient(to bottom,#4d000f,#7a0019,#b3002d);
+overflow:hidden;
+font-family:Arial, sans-serif;
+color:white;
+text-align:center;
+}
+
+.container{
+position:relative;
+z-index:2;
+padding:40px;
+}
+
+.box{
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:25px;
+width:80%;
+max-width:700px;
+margin:auto;
+backdrop-filter:blur(10px);
+box-shadow:0 0 25px pink;
+animation:fade 1s ease;
+}
+
+h1{
+font-size:42px;
+}
+
+h2{
+font-size:30px;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+}
+
+button{
+padding:14px 24px;
+margin:12px;
+border:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+background:white;
+color:#7a0019;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:pink;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* FLOATING HEARTS */
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+overflow:hidden;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+bottom:-50px;
+color:pink;
+font-size:24px;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SONG -->
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/audio/2023/02/10/audio_8c6e3d58b4.mp3" type="audio/mp3">
+</audio>
+
+<!-- HEARTS -->
+<div class="hearts">
+<span class="heart" style="left:10%; animation-delay:0s;">❤️</span>
+<span class="heart" style="left:20%; animation-delay:2s;">💞</span>
+<span class="heart" style="left:35%; animation-delay:4s;">💕</span>
+<span class="heart" style="left:50%; animation-delay:1s;">💖</span>
+<span class="heart" style="left:65%; animation-delay:5s;">❤️</span>
+<span class="heart" style="left:80%; animation-delay:3s;">💘</span>
+<span class="heart" style="left:90%; animation-delay:6s;">💓</span>
+</div>
+
+<div class="container">
+
+<div class="box">
+
+<h1>WELCOME MY MOONPIEEEE 🌙❤️</h1>
+
+<div id="q1">
+
+<h2>Will you stay with me forever? ❤️</h2>
+
+<button onclick="next('q2','q1')">
+YES
+</button>
+
+<button onclick="next('q2','q1')">
+ALSO YES
+</button>
+
+</div>
+
+<div id="q2" class="hidden">
+
+<h2>Are you only mine? 💍</h2>
+
+<button onclick="next('q3','q2')">
+OF COURSE
+</button>
+
+<button onclick="next('q3','q2')">
+ALWAYS
+</button>
+
+</div>
+
+<div id="q3" class="hidden">
+
+<h2>Do you love your moonboy the most? 😚</h2>
+
+<button onclick="showLove()">
+MORE THAN ANYTHING
+</button>
+
+<button onclick="showLove()">
+IN EVERY UNIVERSE
+</button>
+
+</div>
+
+<div id="love" class="hidden">
+
+<h1>❤️ FOR MY MOONPIE ❤️</h1>
+
+<p>
+
+from april 9th to july 6th… ❤️
+
+from random fights to the softest moments…  
+from “AAP HOSTEL MEH RHETE HO KYA” becoming one of my favorite things ever 😭💋
+
+you became my peace,  
+my comfort person,  
+my safe place,  
+my favorite notification.
+
+every single part of my day somehow leads back to you 🌙
+
+i don’t love you casually.  
+i love you deeply.  
+in the kind of way where i imagine you in every tomorrow of mine ❤️
+
+your texts calm me down,
+your voice feels like home,
+and your existence alone makes life softer for me 🫂
+
+i want all your love,
+all your attention,
+all your clinginess,
+all your forever 💞
+
+because moonpieeeeeeeeee…
+
+if souls really exist,
+mine definitely searched for yours before we met ✨
+
+MAIN TERA ❤️  
+MAIN TERA FOREVER ❤️
+
+💋🌙🧸💞🎀
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function next(show,hide){
+document.getElementById(hide).classList.add("hidden");
+document.getElementById(show).classList.remove("hidden");
+}
+
+function showLove(){
+document.getElementById("q3").classList.add("hidden");
+document.getElementById("love").classList.remove("hidden");
+}
+
+</script>
+
+</body>
+</html>
+```
